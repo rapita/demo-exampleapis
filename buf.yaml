@@ -1,0 +1,11 @@
+version: v1
+name: buf.build/rapita/demo-exampleapis
+lint:
+  use:
+    - DEFAULT
+breaking:
+  use:
+    - FILE
+deps:
+  - buf.build/grpc-ecosystem/grpc-gateway
+  - buf.build/googleapis/googleapis
