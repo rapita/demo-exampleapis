@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-package demo.example.foo.v1;
+package demo.example.v1.bar;
 
 import "google/api/annotations.proto";
 import "protoc-gen-openapiv2/options/annotations.proto";
 
-service Foo {
+service Bar {
     rpc Say(SayRequest) returns (SayResponse) {
         option (google.api.http) = {
-            post: "/v1/foo/say",
+            post: "/v1/bar/say",
             body: "*"
         };
         option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
-            summary: "Foo say text",
+            summary: "Bar say text",
         };
     }
 }
